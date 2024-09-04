@@ -3,6 +3,10 @@ import startServer from './libs/boot';
 import injectRoutes from './routes';
 import injectMiddlewares from './libs/middlewares';
 
+/**
+ * creates the Express server
+ */
+
 const server = express();
 
 injectMiddlewares(server);
